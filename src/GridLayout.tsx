@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { dummyData } from './data';
 import axios from 'axios';
+import ImageOverlayModal from './components/ImageOverlayModal/ImageOverlayModal';
 
 export const GridLayoutContainer = () => {
     const [items, setItems] = useState(dummyData);
@@ -8,6 +9,8 @@ export const GridLayoutContainer = () => {
 
     const [draggedItem, setDraggedItem] = useState<number | null>(null);
     const [draggedOver, setDraggedOver] = useState<number | null>(null);
+
+    const [overlayImage, setOverlayImage] = useState<string | null>(null);
 
 
 
@@ -80,12 +83,17 @@ export const GridLayoutContainer = () => {
                             onDragEnd={onDragEnd}
                             // onDrop={handleDrop}
                             role="button"
+                            onClick={() => setOverlayImage(item.url)}
                         >
                             <h3 className="mt-4">{item.title}</h3>
                             <img src={item.url} alt={item.type} className="h-52 object-fit w-full rounded-md" />
                         </div>
                     ))}
                 </div>
+            )}
+
+            {overlayImage && (
+                <ImageOverlayModal src={overlayImage} onClose={() => setOverlayImage(null)} />
             )}
         </>
     );
