@@ -1,0 +1,7 @@
+export const dummyData = [
+    { "type": "bank-draft", "title": "Bank Draft", "position": 0, url: "https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8" },
+    { "type": "bill-of-lading", "title": "Bill of Lading", "position": 1, url: "https://plus.unsplash.com/premium_photo-1677545182425-4fb12bdb9faf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D" },
+    { "type": "invoice", "title": "Invoice", "position": 2, url: "https://images.unsplash.com/photo-1491485880348-85d48a9e5312?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" },
+    { "type": "bank-draft-2", "title": "Bank Draft 2", "position": 3, url: "https://media.istockphoto.com/id/1445253259/photo/goliath.webp?a=1&s=612x612&w=0&k=20&c=PGuDChko5HiqcVn5R0BnMo4glYc6tF09JAcIlMqtxEE=" },
+    { "type": "bill-of-lading-2", "title": "Bill of Lading 2", "position": 4, url: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+]
